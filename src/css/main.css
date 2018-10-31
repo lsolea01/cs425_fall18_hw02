@@ -114,6 +114,21 @@ font-family: ;
 
   }
 
+}@media (min-width: 1284px) and (max-width: 1788px) {
+
+  .title> h1#ti {
+    font-size: 5em;
+    font-style: italic;
+
+    top: 13%;
+    left: 25%;
+    right: 0;
+    width: 60%;
+
+    position: absolute;
+
+  }
+
 }
 
 /*
@@ -191,7 +206,7 @@ font-family: ;
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 0 4px;
 }
 
