@@ -45,7 +45,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  height: 50;
+  height: 50%;
+align-items: center;
   padding-top: 66.66%;
 
 
@@ -486,8 +487,8 @@ and (orientation: landscape) {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 40%;
+  max-width: 40%;
   padding: 0 4px;
 }
 
@@ -499,8 +500,8 @@ and (orientation: landscape) {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    flex: 50%;
-    max-width: 50%;
+    flex: 10%;
+    max-width: 60%;
   }
 }
 
@@ -516,29 +517,15 @@ and (orientation: landscape) {
 
 /*vision style*/
 
-
-* {
-  box-sizing: border-box;
-}
-
-/* Create three equal columns that floats next to each other */
-.column_vision {
-  float: left;
-  width: 33.33%;
-  color: #5e5fff;
-  background-color: #ffe48a;
-  padding: 10px;
-  height: 160px; /* Should be removed. Only for demonstration */
-}
-
 /* Clear floats after the columns */
-.row_vision:after {
-   display:  block;
-  clear: both;
+.row_vision {
+   background: #5352ff;
 }
 
 
-
+#vi{
+  background: #fcff6a;
+}
 
 /*social media css*/
 
