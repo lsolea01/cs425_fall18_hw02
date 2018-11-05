@@ -424,6 +424,22 @@ and (orientation: landscape) {
 }
 
 
+@media screen and (min-width: 800px) {
+  .title> h1#ti {
+    font-size: 3em;
+    font-style: italic;
+    font-family:"Brush Script MT" ;
+
+    color: blueviolet;
+    top: 10%;
+    left: 20%;
+    right: 0;
+    width: 60%;
+
+    position: absolute;
+
+  }
+}
 
 
 
