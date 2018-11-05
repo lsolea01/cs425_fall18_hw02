@@ -112,24 +112,74 @@
 .column {
   flex: 50%;
   padding: 100px;
-  top: 150px;
+  top: 200px;
   height: 50px; /* Should be removed. Only for demonstration */
 }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px)  {
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other landscape*/
+@media    (max-width : 800px)   {
   .column {
     flex: 50%;
-    padding: 125px;
+     padding: 12em;
     top: 150px;
     height: 50px; /* Should be removed. Only for demonstration */
   }
-
   .row {
     display: block;
     flex-wrap: wrap;
   }
 .social{
-  top: 80em;
+  top: 120em;
 }
+}
+/*@media    (max-width : 1024px)   {*/
+  /*.column {*/
+    /*flex: 50%;*/
+    /*background-color: #5352ff;*/
+     /*padding: 30em;*/
+    /*top: 100px;*/
+    /*height: 50px; !* Should be removed. Only for demonstration *!*/
+  /*}*/
+  /*.row {*/
+    /*display: block;*/
+    /*flex-wrap: nowrap;*/
+  /*}*/
+/*.social{*/
+  /*top: 120em;*/
+/*}*/
+/*}*/
+
+
+@media screen and (min-width: 800px) and (orientation: landscape) {
+  .column {
+    flex: 50%;
+     padding: 15em;
+    top: 150px;
+    height: 50px; /* Should be removed. Only for demonstration */
+  }
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .social{
+    top: 80em;
+  }
+}
+
+
+@media screen and (min-width: 800px) and (orientation: portrait) {
+  .column {
+    flex: 50%;
+
+    padding: 15em;
+    top: 150px;
+    height: 50px; /* Should be removed. Only for demonstration */
+  }
+  .row {
+    display: block;
+    flex-wrap: wrap;
+  }
+  .social{
+    top: 80em;
+  }
 }
 
